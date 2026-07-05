@@ -1,0 +1,54 @@
+/* theme.css - variables for both themes. Toggle by setting data-theme="light" on <html> */
+:root {
+    --bg-primary: #0d0f12;
+    --bg-secondary: #15181c;
+    --bg-tertiary: #1c2026;
+    --border-color: #262b31;
+    --text-primary: #eef1f4;
+    --text-secondary: #a6adb8;
+    --text-muted: #6e7580;
+    --accent: #5eead4;
+    --accent-hover: #7ff3e0;
+    --accent-soft: rgba(94, 234, 212, 0.12);
+    --shadow: rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="light"] {
+    --bg-primary: #fbfbfc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f1f3f5;
+    --border-color: #e6e8eb;
+    --text-primary: #14171a;
+    --text-secondary: #4b5158;
+    --text-muted: #8a9099;
+    --accent: #0f766e;
+    --accent-hover: #0b5c56;
+    --accent-soft: rgba(15, 118, 110, 0.08);
+    --shadow: rgba(20, 23, 26, 0.08);
+}
+
+/* selection */
+::selection {
+    background: var(--accent-soft)
+}
+
+/* scrollbar (desktop) */
+@media (hover: hover) and (pointer: fine) {
+    ::-webkit-scrollbar {
+        width: 10px
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 999px
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent);
+        opacity: .12
+    }
+}

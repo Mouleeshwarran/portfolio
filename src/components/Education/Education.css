@@ -1,0 +1,72 @@
+@import "../../styles/globals.css";
+
+.education {
+    padding: 96px 0
+}
+
+.timeline {
+    border-left: 2px solid var(--border-color);
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.timeline-item {
+    display: flex;
+    gap: 18px;
+    position: relative
+}
+
+.timeline-item .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    position: absolute;
+    left: -36px;
+    top: 6px
+}
+
+.timeline-item.current .dot {
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent-soft)
+}
+
+.period {
+    color: var(--text-muted);
+    font-size: 13px
+}
+
+.badge {
+    background: var(--accent);
+    color: var(--bg-primary);
+    padding: 4px 8px;
+    border-radius: 999px;
+    margin-left: 8px;
+    font-size: 12px
+}
+
+.degree {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 6px
+}
+
+.inst {
+    color: var(--text-secondary);
+    font-size: 14px
+}
+
+.detail {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 6px
+}
+
+@media(max-width:768px) {
+    .education {
+        padding: 56px 0
+    }
+}

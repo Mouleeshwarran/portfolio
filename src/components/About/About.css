@@ -1,0 +1,53 @@
+@import "../../styles/globals.css";
+
+.about {
+    padding: 96px 0
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 18px;
+    position: relative
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 4px;
+    margin-top: 8px
+}
+
+.summary {
+    max-width: 880px;
+    color: var(--text-secondary);
+    line-height: 1.6
+}
+
+.contact-chips {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: var(--bg-tertiary)
+}
+
+.chip:hover {
+    background: var(--accent-soft)
+}
+
+@media (max-width:768px) {
+    .about {
+        padding: 56px 0
+    }
+}
